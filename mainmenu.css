@@ -1,0 +1,34 @@
+body {
+  margin: auto;
+  text-align: center;
+  background: url("images/411829.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}
+
+a:link {
+  color: red;
+}
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: green;
+}
+
+h1 {
+  font-family: 'Nosifer';
+  font-size: 3em;
+  color: gray;
+  text-shadow: .125em .125em .250em black, 0em 0em 1.5625em black, 0 0 .3125em black;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: black;
+  text-shadow: .0625em .0625em .125em black, 0em 0em .625em black, 0 0 .0625em black;
+}
