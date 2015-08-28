@@ -5,3 +5,16 @@ h1 {
 .theBoard {
   text-align: center;
 }
+
+body {
+  background: url("images/desert.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+}

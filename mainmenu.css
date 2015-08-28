@@ -1,7 +1,7 @@
 body {
   margin: auto;
   text-align: center;
-  background: url("images/411829.jpg") no-repeat center center fixed;
+  background: url("images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -28,7 +28,7 @@ h1 {
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: 2em;
   color: black;
   text-shadow: .0625em .0625em .125em black, 0em 0em .625em black, 0 0 .0625em black;
 }
