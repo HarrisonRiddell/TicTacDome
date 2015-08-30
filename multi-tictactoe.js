@@ -115,12 +115,8 @@ function canvasClicked(canvasNumber) {
       // add sound to click
 			// Shout out to Bobby
 			noiseGun.play();
-			// in the marked array with an 'X' in the proper spot
+			// in the marked array an 'X' in the proper index
       marked[canvasNumber-1] = 'X';
-
-      // can't append images to the canvas
-      // change format to <ul> and <li>?
-
 
     } else {
 			// start the path
@@ -143,11 +139,15 @@ function canvasClicked(canvasNumber) {
 			context.stroke();
 			context.closePath();
 			// create spokes.... maybe
+			// or wheel
 			context.beginPath();
 			context.strokeStyle = '#000000'
 			context.lineWidth = 5;
 			context.moveTo(50,50);
-			context.lineTo(50,10);
+			context.lineTo(50,90);
+			context.stroke();
+			context.moveTo(10,50);
+			context.lineTo(90,50);
 			context.stroke();
 			// add sound to click
 			// shout out to Bobby
