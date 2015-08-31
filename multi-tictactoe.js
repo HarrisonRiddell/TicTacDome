@@ -195,8 +195,9 @@ function canvasClicked(canvasNumber) {
 function findWinner(symbol){
 
 	for(var j = 0; j < winningCombinations.length; j++){
-	// check through the arrays to see if there is a mark and if so what is the symbol of the mark
-	// if the box is marked and all three symbols are the same. BOOM! we have a winner!
+	// check to see what the symbol is (_, X, O)
+	// 3 boxes needed to win (0,1,2)
+	// if those three end up being boxes in the winningCombinations array then the game is over
 	if(marked[winningCombinations[j][0]] == symbol&&marked[winningCombinations[j][1]] ==	symbol&&marked[winningCombinations[j][2]] == symbol) {
 		// set an alert to someone has won
 		alert("THE PLAYER WHO USED "+symbol+" SHALL RECIEVE SHINY AND ASCEND TO VALHALLA!");

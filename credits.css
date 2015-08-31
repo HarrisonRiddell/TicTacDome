@@ -1,0 +1,6 @@
+body {
+  color: gray;
+  background: url("images/background.jpg") no-repeat center center fixed;
+  font-size: 2em;
+  align-items: center;
+}
