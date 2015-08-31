@@ -2,8 +2,8 @@ var filled;
 var marked;
 var theCanvas;
 var winningCombinations;
-var squaresFilled = 0;
-var turn = 0;
+var squaresFilled = 0; // add 1 every cycle
+var turn = 0; // add 1 every cycle
 var noiseGun = new Audio('sounds/shotgun.mp3');
 var noiseTires = new Audio('sounds/tires.mp3');
 var noiseNux = new Audio('sounds/nux.mp3');
@@ -195,11 +195,12 @@ function canvasClicked(canvasNumber) {
 function findWinner(symbol){
 
 	for(var j = 0; j < winningCombinations.length; j++){
-	//
+	// check through the arrays to see if there is a mark and if so what is the symbol of the mark
+	// if the box is marked and all three symbols are the same. BOOM! we have a winner!
 	if(marked[winningCombinations[j][0]] == symbol&&marked[winningCombinations[j][1]] ==	symbol&&marked[winningCombinations[j][2]] == symbol) {
-		//
+		// set an alert to someone has won
 		alert("THE PLAYER WHO USED "+symbol+" SHALL RECIEVE SHINY AND ASCEND TO VALHALLA!");
-		// launch the tryAgain
+		// launch the tryAgain function to play again
 		tryAgain();
 	}
 	}

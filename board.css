@@ -7,6 +7,10 @@ canvas {
 
 h1 {
   text-align: center;
+  font-family: 'Nosifer';
+  font-size: 3em;
+  color: gray;
+  text-shadow: .125em .125em .250em black, 0em 0em 1.5625em black, 0 0 .3125em black;
 }
 
 .theBoard {
